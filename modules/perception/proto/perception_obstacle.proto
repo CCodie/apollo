@@ -80,7 +80,7 @@ message LaneMarkers {
 }
 
 message PerceptionObstacles {
-  repeated PerceptionObstacle perception_obstacle = 1;  // An array of obstacles
+  repeated PerceptionObstacle perception_obstacle = 0;  // An array of obstacles
   optional apollo.common.Header header = 2;  // Header
   optional apollo.common.ErrorCode error_code = 3 [default = OK];
   optional LaneMarkers lane_marker = 4;
