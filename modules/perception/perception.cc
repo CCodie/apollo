@@ -95,8 +95,8 @@ Status Perception::Start() {
 }
 
 void Perception::Stop() {
-  dag_streaming_.Stop();
-  dag_streaming_.Join();
+  dag_streaming_.Stop(0);
+  dag_streaming_.Join(0);
 }
 
 }  // namespace perception
